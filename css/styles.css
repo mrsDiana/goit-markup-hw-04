@@ -1,0 +1,372 @@
+:root {
+    --accent-color: #2196F3;
+    --black:#000000;
+    --white:#FFFFFF;
+    --header-and-item: #212121;
+    --adress-footer: #FFFFFF99;
+    --black-fon: #2F303A;
+    --gray-fon: #F5F4FA;
+    --main: #757575;
+    --hero-button: #188ce8;
+    --border-header:#ECECEC;
+    --border-cards:#EEEEEE;
+    --shadow:rgba(0, 0, 0, 0.25);
+}
+
+body {
+font-family: Roboto, sans-serif ;
+color: var(--main);
+background-color: var(--white);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    padding: 94px 0;
+}
+
+h1, h2, h3, h4, p, li, ul, a {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*Шапка*/
+.header .container,
+.header-nav,
+.pages,
+.contacts .list {
+    display: flex;
+    align-items: center;
+}
+
+.header  .container{
+    padding: 24px 0 25px;
+}
+
+.header{
+border-bottom: 1px solid var(--border-header);
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight:700;
+    font-size: 26px;
+    line-height: 1.19;    
+    color: var(--accent-color);
+    margin-right: 93px;
+ }
+
+.logo-header {
+    color: var(--black);
+}
+
+.pages .link{
+    font-weight:500;
+    font-size:14px;
+    line-height: 0.88;
+    color: var(--header-and-item);
+    padding: 20px 0;
+}
+
+.header .list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-link {
+    font-weight:500;
+    font-size:14px;
+    line-height:1.14;
+    letter-spacing: 0.02em;
+    color: var(--main);
+    padding: 20px 0;
+  
+}
+
+
+.pages li:not(:last-child),
+.contacts li:not(:last-child),
+.header-contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link:hover,
+.link:focus,
+.link:active{
+    color: var(--accent-color);
+}
+
+.pages .curent {
+    color: var(--accent-color) ;
+}
+
+/*Студия*/
+
+/*Герой*/
+
+.hero {
+    color: var(--white);
+    background-color: var(--black-fon);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+.hero .container {
+    padding: 200px 0;}
+
+.hero-title {
+    margin: auto;
+    font-weight: 900;
+    font-size: 44px;
+    margin-bottom: 30px;
+    width: 696px;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+}
+
+.button-blu {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: 2px transparent;
+    border-radius: 4px;
+
+    text-align: center; 
+    color: var(--white);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button-blu:active,
+.button-blu:hover,
+.button-blu:focus {
+    background-color: var(--hero-button);
+}
+
+/*Особенности*/
+
+.none {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.characteristic,
+.characteristic .list{
+display: flex;
+    flex-wrap: wrap;
+}
+
+.characteristic li {
+    width: 270px;
+}
+
+.characteristic li:not(:nth-child(n+4)){
+    margin-right: 30px;
+}
+
+.characteristic .title-item {
+    margin-bottom: 10px;
+    color: var(--header-and-item);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/*Оглавление секций*/
+.title {
+    margin-bottom: 50px;
+
+    color: var(--header-and-item);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/*Чем мы занимаемся*/
+.work.section {
+    padding-top: 0;
+}
+
+.work .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work li:not(:nth-child(n+3)) {
+    margin-right: 30px;
+}
+
+/*Наша команда*/
+.team {
+    background-color: var(--gray-fon);
+}
+
+.team .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-cards:not(:nth-child(n+4)) {
+    margin-right: 30px;
+}
+.team-cards{
+    width: 270px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.name {
+    margin: 30px 0 10px 0;
+    color: var(--header-and-item);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*Подвал*/
+.footer {
+    background-color: var(--black-fon);
+    padding: 60px 0;
+}
+
+.footer .logo{
+    display: block;
+    margin-bottom: 20px;    
+}
+
+.footer li:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.logo-footer {
+    color: var(--white);
+}
+
+.address{
+    color: var(--white);
+    font-style: normal;
+    padding: 4px 0;
+}
+
+.footer-contacts {
+    color: var(--adress-footer);
+    font-style: normal;
+    padding: 4px 0;
+}
+
+/*Портфолио*/
+.portfolio .button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-grey:last-child {
+margin-right: 8px;
+}
+
+.btn-grey {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 2px transparent;
+    text-align: center;
+    cursor: pointer;
+    color: var(--header-and-item);
+    background-color: var(--gray-fon);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active {      
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
+.portfolio-cards{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width:calc((100% - 60px) / 3);
+    margin-right: 30px;
+    height: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+    width: 370px;
+}
+
+.portfolio-item:nth-last-of-type(-n+3){
+    margin-bottom: 0;
+}
+
+.portfolio-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.border-cards {
+    border-bottom: 1px solid var(--border-cards);
+    border-right: 1px solid var(--border-cards);
+    border-left: 1px solid var(--border-cards);
+    padding: 20px 24px;
+}
+
+.title-cards {
+    color: var(--header-and-item);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.point {
+    font-size: 16px;
+    line-height: 1.88;
+}
