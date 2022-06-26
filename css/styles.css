@@ -348,7 +348,7 @@ margin-right: 30px;
 
 .footer .container {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .footer .container > div:not(:last-child){
