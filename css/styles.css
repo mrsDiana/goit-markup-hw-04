@@ -67,10 +67,6 @@ img {
     align-items: center;
 }
 
-.header  .container{
-    padding: 24px 0 25px;
-}
-
 .header{
 border-bottom: 1px solid var(--border-header);
 }
@@ -82,6 +78,7 @@ border-bottom: 1px solid var(--border-header);
     line-height: 1.19;    
     color: var(--accent-color);
     margin-right: 93px;
+    padding: 24px 0 25px;
  }
 
 .logo-header {
@@ -148,7 +145,8 @@ border-bottom: 1px solid var(--border-header);
     background-image: linear-gradient(var(--grad),var(--grad) ), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero .container {
@@ -213,13 +211,15 @@ display: flex;
     width: 270px;
 }
 
-.characteristic-icon {
+.characteristic-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--gray-fon);
     width: 270px;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-bottom: 30px;
+    
 }
 
 
@@ -268,7 +268,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .team-cards:not(:nth-child(n+4)) {
     margin-right: 30px;
@@ -293,7 +293,7 @@ display: flex;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .massenger-item {
@@ -324,11 +324,11 @@ margin-right: 10px;
 .klients li {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--massanger);
     border-radius: 4px;
-    padding: 16px 32px;
     fill: var(--massanger);
     cursor: pointer;
 }
@@ -384,6 +384,7 @@ line-height:1.14;
 text-transform: uppercase;
 color: var(--white);
 margin-bottom: 20px;
+font-weight: 700;
 }
 
 .join .massenger-item {
@@ -450,6 +451,10 @@ margin-right: 8px;
     width: 370px;
 }
 
+.portfolio-item>a {
+    display: block;
+}
+
 .portfolio-item:nth-last-of-type(-n+3){
     margin-bottom: 0;
 }
@@ -482,7 +487,7 @@ margin-right: 8px;
 color: currentColor;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item>a:hover,
+.portfolio-item>a:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }           
