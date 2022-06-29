@@ -69,6 +69,7 @@ img {
 
 .header{
 border-bottom: 1px solid var(--border-header);
+padding: 24px 0 25px;
 }
 
 .logo {
@@ -77,12 +78,14 @@ border-bottom: 1px solid var(--border-header);
     font-size: 26px;
     line-height: 1.19;    
     color: var(--accent-color);
-    margin-right: 93px;
-    padding: 24px 0 25px;
  }
 
 .logo-header {
     color: var(--black);
+}
+
+.header .logo {
+    margin-right: 93px;
 }
 
 .pages .link{
@@ -268,8 +271,13 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-bottom: 30px;
 }
+
+.social-link{
+margin-bottom: 30px;
+}
+
+
 .team-cards:not(:nth-child(n+4)) {
     margin-right: 30px;
 }
@@ -297,13 +305,21 @@ display: flex;
 }
 
 .massenger-item {
-padding: 12px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     fill: var(--massanger);
     cursor: pointer;
 }
+
+.team-link {
+width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .massenger-item:not(:last-child){
 margin-right: 10px;
 }
@@ -379,6 +395,10 @@ margin-right: 70px;
     padding: 4px 0;
 }
 
+.footer-connection>li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .header-join{
 line-height:1.14;
 text-transform: uppercase;
@@ -404,6 +424,14 @@ font-weight: 700;
 .join .massenger-item:hover,
 .join .massenger-item:focus {
     background-color: var(--accent-color);
+}
+
+.join-link{
+    width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 /*Портфолио*/
@@ -475,6 +503,7 @@ margin-right: 8px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+        margin-bottom: 4px;
 }
 
 .point {
