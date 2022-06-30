@@ -69,8 +69,12 @@ img {
 
 .header{
 border-bottom: 1px solid var(--border-header);
-padding: 24px 0 25px;
 }
+
+.header .container{
+height: 80px;
+}
+
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -93,7 +97,7 @@ padding: 24px 0 25px;
     font-size:14px;
     line-height: 0.88;
     color: var(--header-and-item);
-    padding: 20px 0;
+    padding: 32px 0;
 }
 
 .header .list {
